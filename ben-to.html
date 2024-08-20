@@ -1,0 +1,172 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Mimic Dev.to" content="practicing cs through mimicry">
+    <title>BEN.to</title>
+    <style>
+        .background {
+            background-color: rgb(238, 235, 235);
+        }
+        .main-setup {
+            display: flex;
+            flex-direction: column;
+        }
+        .logo {
+            height: 35px;
+            width: auto;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+        .nav-bar {
+            position: fixed;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 55px;
+            top: 0;
+            left: 0;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .search-bar {
+            width: 720px;
+            height: 34px;
+            border: 1px solid rgb(189, 187, 187);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .magnify {
+            height: 30px;
+            width: auto;
+            background-color: white;
+            border-radius: 5px;
+            margin-left: 3px;
+        }
+        .magnify:hover {
+            background-color: rgb(219, 217, 217);
+            cursor: pointer;
+        }
+        #login {
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 5px;
+        }
+        #login:hover {
+            background-color: rgba(176, 197, 236, 0.959);
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        #create-account {
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 5px;
+            border: 1px solid blue;
+            color: blue;
+            font-weight: bold;
+        }
+        #create-account:hover {
+            background-color: rgba(20, 89, 218, 0.959);
+            color: white;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .body-col {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 55px;
+            overflow: hidden;
+        }
+        .column-left {
+            width: 256px;
+            padding: 3px;
+        }
+        .column-center {
+            width: 720px;
+            padding: 3px;
+        }
+        .column-right {
+            width: 360px;
+            padding: 3px;
+        }
+        .box1 {
+            background-color: white;
+            border-radius: 8px;
+            height: 200px;
+            width: 256px;
+        }
+        .box2 {
+            background-color: white;
+            border-radius: 8px;
+            height: 200px;
+            width: 720px;
+        }
+        .box3 {
+            background-color: white;
+            border-radius: 8px;
+            height: 200px;
+            width: 360px;
+        }
+        .flex-left {
+            display: flex;
+            justify-content: left;
+        }
+        .font-10 {
+            font-size: large;
+            border-radius: 8px;
+            height: 40px;
+            width: 100px;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5px;
+            
+        }
+        .font-10:hover {
+            color: blue;
+            cursor: pointer;
+            background-color: white;
+        }
+    </style>
+</head>
+<body class="background">
+    <div class="main-setup">
+        <div class="nav-bar">
+            <img src="ben-logo.png" class="logo">
+            <div class="search-bar">
+                <img src="magnify2.jpg" class="magnify">
+            </div>
+            <div>
+                <a href="ahhh.html" id="login">Log in</a>
+            </div>
+            <div>
+                <a href="ahhh.html" id="create-account">Create Account</a>
+            </div>
+        </div>
+        <div class="body-col">
+            <div class="column-left"> 
+                <div class="box1"></div> 
+            </div>
+            <div class="column-center">
+                <div class="flex-left">
+                    <li class="font-10">Relevant</li>
+                    <li class="font-10">Latest</li>
+                    <li class="font-10">Top</li>
+                </div> 
+                <div class="box2"></div> 
+            </div>
+            <div class="column-right">
+                <div class="box3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
